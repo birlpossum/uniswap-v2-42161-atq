@@ -4,13 +4,13 @@ import { ContractTag, ITagService } from "atq-types";
 export const PAGE = 1000; // The Graph caps page size at 1 000
 /**
  * Uniswap-V2 subgraph on Base
- * Deployment ID: 4jGhpKjW4prWoyt5Bwk1ZHUwdEmNWveJcjEyjoTZWCY9
+ * Deployment ID: CStW6CSQbHoXsgKuVCrk3uShGA4JX3CAzzv2x9zaGf8w
  */
 export function endpoint(apiKey?: string): string {
   if (!apiKey || apiKey === "dummy") {
-    return "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/4jGhpKjW4prWoyt5Bwk1ZHUwdEmNWveJcjEyjoTZWCY9";
+    return "https://gateway.thegraph.com/api/[api-key]/subgraphs/id/CStW6CSQbHoXsgKuVCrk3uShGA4JX3CAzzv2x9zaGf8w";
   }
-  return `https://gateway.thegraph.com/api/${apiKey}/subgraphs/id/4jGhpKjW4prWoyt5Bwk1ZHUwdEmNWveJcjEyjoTZWCY9`;
+  return `https://gateway.thegraph.com/api/${apiKey}/subgraphs/id/CStW6CSQbHoXsgKuVCrk3uShGA4JX3CAzzv2x9zaGf8w`;
 }
 
 // --- types ---
