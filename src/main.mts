@@ -189,7 +189,7 @@ class TagService implements ITagService {
     chainId: string,
     apiKey: string
   ): Promise<ContractTag[]> => {
-    if (Number(chainId) !== 8453)
+    if (Number(chainId) !== 42161)
       throw new Error(`Unsupported Chain ID: ${chainId}.`);
     if (!apiKey) throw new Error("API key is required");
     let lastTimestamp: number = 0;
